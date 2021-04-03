@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="Wildcard.2efe64a0-0da9-425e-955e-57fa1d0bf6cc" Version="0.1" Language="en-US" Publisher="lsoft" />
         <DisplayName>Wildcard Searching</DisplayName>
-        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <Description xml:space="preserve">Allows user to perform wildcard based searching in additiona to plain substring and regexp.</Description>
         <MoreInfo>https://github.com/lsoft/WildcardSearch</MoreInfo>
         <License>LICENSE.txt</License>
         <Icon>RegularExpression.png</Icon>

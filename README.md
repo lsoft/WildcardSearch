@@ -1,6 +1,6 @@
 # WildcardSearch
 
-Visual Studio searching by wildcards
+Visual Studio 2019, 2022 searching by wildcards
 
 ![Modified window](example.png)
 

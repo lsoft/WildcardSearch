@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Wildcard.2efe64a0-0da9-425e-955e-57fa1d0bf6cc" Version="0.1" Language="en-US" Publisher="lsoft" />
+        <Identity Id="Wildcard.2efe64a0-0da9-425e-955e-57fa1d0bf6cc" Version="0.2" Language="en-US" Publisher="lsoft" />
         <DisplayName>Wildcard Searching</DisplayName>
-        <Description xml:space="preserve">Allows user to perform wildcard based searching in additiona to plain substring and regexp.</Description>
+        <Description xml:space="preserve">Allows user to perform wildcard based searching in addition to plain substring and regexp.</Description>
         <MoreInfo>https://github.com/lsoft/WildcardSearch</MoreInfo>
         <License>LICENSE.txt</License>
         <Icon>RegularExpression.png</Icon>
@@ -11,13 +11,13 @@
         <Preview>true</Preview>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.10, 17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
-    <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    </Dependencies>
     <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,18.0)" DisplayName="Visual Studio core editor" />
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />

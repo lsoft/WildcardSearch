@@ -24,10 +24,16 @@ namespace Wildcard
     public class FindWindowModifier
     {
         private readonly Events _events;
+
         //private readonly FindEvents _findEvents;
 
         public FindWindowModifier(DTE2 dte)
         {
+            if (dte is null)
+            {
+                throw new ArgumentNullException(nameof(dte));
+            }
+
             ThreadHelper.ThrowIfNotOnUIThread();
 
             _events = dte.Events;
@@ -70,7 +76,7 @@ namespace Wildcard
 
                         var checkBoxes = new List<CheckBox>();
                         findDialogControl.GetRecursiveByType(ref checkBoxes);
-                        if (checkBoxes.Count != 6)
+                        if (checkBoxes.Count != 7)
                         {
                             continue;
                         }
@@ -103,7 +109,7 @@ namespace Wildcard
 
                         var comboBoxes = new List<ComboBox>();
                         findDialogControl.GetRecursiveByType(ref comboBoxes);
-                        if (comboBoxes.Count != 4)
+                        if (comboBoxes.Count != 5)
                         {
                             continue;
                         }

@@ -1,6 +1,8 @@
+# VS does not allow vsixers to modify its UI. so this vsix do the things in very horrible and ugliest way. It's fragile. It's not safe. Remember it, if you want to compile it and install to your VS.
+
 # WildcardSearch
 
-Visual Studio 2019, 2022 searching by wildcards
+Visual Studio 2019 searching by wildcards
 
 ![Modified window](example.png)
 
